@@ -47,10 +47,21 @@ h1,h2,h3,h4,h5,h6 p, figure, fieldset {
     margin: 0;
 }
 
-
-
 .container {
     max-width: calc(var(--container) + var(--padding-container) * 2);
     padding: 0 var(--padding-container);
     margin: 0 auto;
+}
+
+
+@media (min-width: 500px) {
+    html {
+        --container: 720px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        --padding-container: 24px;
+    }
 }
