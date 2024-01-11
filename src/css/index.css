@@ -332,10 +332,79 @@ template {
 .page {
   background-color: #F8F8F8;
   display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.logo {
+  padding: 0 16px;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .navigation {
   background-color: white;
   width: 306px;
   height: 100vh;
+  display: none;
+}
+
+.header {
+  background-color: #FFFFFF;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+}
+.header__buttons-profile {
+  display: none;
+}
+.header__buttons-services::before {
+  content: "";
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  margin-left: 16px;
+  background-color: #EAEAEA;
+}
+
+@media (min-width: 768px) {
+  .header__burger {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header__burger::after {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: #EAEAEA;
+  }
+  .header__logo {
+    flex: 1 1 auto;
+  }
+  .header__buttons-profile {
+    display: flex;
+  }
 }/*# sourceMappingURL=index.css.map */
