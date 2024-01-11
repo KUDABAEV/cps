@@ -3,10 +3,9 @@
     width: 306px;
     height: 100vh;
     display: none;
-}
 
-@media (min-width: 1440px) {
-    .navigation {
+    @media (min-width: 1440px) {
         display: block;
+        
     }
 }
