@@ -1,4 +1,20 @@
-.page{
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+}
+
+h1,h2,h3,h4,h5,h6 p, figure, fieldset {
+    margin: 0;
+}
+
+
+.page {
     background-color: #F8F8F8;
     display: flex;
     min-height: 100vh;
@@ -10,12 +26,12 @@
 
 
 .container {
-    padding: 0 16px;
+    padding: 0 var(--offset-container);
 
 }
 
 
-.logo   {
+.logo {
     padding: 0 16px;
 }
 

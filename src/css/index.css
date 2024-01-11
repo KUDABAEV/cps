@@ -329,6 +329,30 @@ template {
   src: local("TT Lakes"), url("./../fonts/TTLakes-Bold.woff2") format("woff2"), url("./../fonts/TTLakes-Bold.woff") format("woff"), url("./../fonts/TTLakes-Bold.eot") format("eot");
   font-display: swap;
 }
+:root {
+  --offset-container: 16px;
+}
+@media (min-width: 768px) {
+  :root {
+    --offset-container: 24px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TT Lakes", sans-serif;
+  color: #1B1C21;
+}
+
+h1, h2, h3, h4, h5, h6 p, figure, fieldset {
+  margin: 0;
+}
+
 .page {
   background-color: #F8F8F8;
   display: flex;
@@ -340,7 +364,7 @@ template {
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 var(--offset-container);
 }
 
 .logo {
@@ -438,6 +462,24 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main__title {
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  padding: 24px 0;
+  margin: 0 calc(var(--offset-container) * -1);
+}
+.main__title::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 40px;
+  border-radius: 0 4px 4px 0;
+  background-color: #41F6D7;
+  margin-right: var(--offset-container);
 }
 .main__buttons {
   gap: 32px;

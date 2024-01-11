@@ -1,0 +1,7 @@
+:root {
+    --offset-container: 16px;
+
+    @media (min-width: 768px) {
+        --offset-container: 24px;
+    }
+}
