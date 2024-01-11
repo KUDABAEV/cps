@@ -1,0 +1,16 @@
+.main {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__buttons {
+        gap: 32px;
+        display: none;
+
+    }
+}
+
+ 

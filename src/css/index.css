@@ -335,7 +335,7 @@ template {
   min-height: 100vh;
 }
 
-.content {
+.wrapper {
   flex: 1 1 auto;
 }
 
@@ -360,6 +360,18 @@ button {
   gap: 16px;
 }
 
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+.button-icon:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
 .navigation {
   background-color: white;
   width: 306px;
@@ -367,6 +379,11 @@ button {
   display: none;
 }
 
+@media (min-width: 1440px) {
+  .navigation {
+    display: block;
+  }
+}
 .header {
   background-color: #FFFFFF;
 }
@@ -407,4 +424,18 @@ button {
   .header__buttons-profile {
     display: flex;
   }
+}
+@media (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+}
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__buttons {
+  gap: 32px;
+  display: none;
 }/*# sourceMappingURL=index.css.map */
