@@ -55,8 +55,11 @@
             width: 2px;
             height: 32px;
             border-radius: 1px;
-            margin-left: 16px;
             background-color: #EAEAEA;
+
+            @media (min-width: 768px) {
+                margin-left: 16px;
+            }
         }
     }
 
