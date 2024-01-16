@@ -312,21 +312,21 @@ template {
   font-family: "TT Lakes";
   font-weight: 400;
   font-style: normal;
-  src: local("TT Lakes"), url("./../fonts/TTLakes-Regular.woff2") format("woff2"), url("./../fonts/TTLakes-Regular.woff") format("woff"), url("./../fonts/TTLakes-Regular.eot") format("eot");
+  src: local("TT Lakes"), url("./../assets/fonts/TTLakes-Regular.woff2") format("woff2"), url("./../assets/fonts/TTLakes-Regular.woff") format("woff"), url("./../assets/fonts/TTLakes-Regular.eot") format("eot");
   font-display: swap;
 }
 @font-face {
   font-family: "TT Lakes";
   font-weight: 500;
   font-style: normal;
-  src: local("TT Lakes"), url("./../fonts/TTLakes-Medium.woff2") format("woff2"), url("./../fonts/TTLakes-Medium.woff") format("woff"), url("./../fonts/TTLakes-Medium.eot") format("eot");
+  src: local("TT Lakes"), url("./../assets/fonts/TTLakes-Medium.woff2") format("woff2"), url("./../assets/fonts/TTLakes-Medium.woff") format("woff"), url("./../assets/fonts/TTLakes-Medium.eot") format("eot");
   font-display: swap;
 }
 @font-face {
   font-family: "TT Lakes";
   font-weight: 700;
   font-style: normal;
-  src: local("TT Lakes"), url("./../fonts/TTLakes-Bold.woff2") format("woff2"), url("./../fonts/TTLakes-Bold.woff") format("woff"), url("./../fonts/TTLakes-Bold.eot") format("eot");
+  src: local("TT Lakes"), url("./../assets/fonts/TTLakes-Bold.woff2") format("woff2"), url("./../assets/fonts/TTLakes-Bold.woff") format("woff"), url("./../assets/fonts/TTLakes-Bold.eot") format("eot");
   font-display: swap;
 }
 :root {
@@ -335,6 +335,11 @@ template {
 @media (min-width: 768px) {
   :root {
     --offset-container: 24px;
+  }
+}
+@media (min-width: 1120px) {
+  :root {
+    --offset-container: 32px;
   }
 }
 
@@ -435,7 +440,7 @@ ul {
 .header {
   background-color: #FFFFFF;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .header {
     display: none;
   }
@@ -459,6 +464,9 @@ ul {
     border-radius: 1px;
     background-color: #EAEAEA;
   }
+}
+.header__logo {
+  flex: 1 1 auto;
 }
 @media (min-width: 768px) {
   .header__logo {
@@ -512,10 +520,14 @@ ul {
   gap: 32px;
   display: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .main__buttons {
     display: flex;
   }
+}
+.main__buttons button {
+  font-weight: 500;
+  color: #1B1C21;
 }
 
 .tabs__button-list {
@@ -526,17 +538,18 @@ ul {
        column-gap: 2px;
   margin-bottom: 24px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+  .tabs__button-list {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1120px) {
   .tabs__button-list {
     -moz-column-gap: 10px;
          column-gap: 10px;
     flex-wrap: wrap;
     row-gap: 5px;
-  }
-}
-@media (min-width: 768px) {
-  .tabs__button-list {
-    margin-bottom: 32px;
+    margin-bottom: 11px;
   }
 }
 .tabs__button-item {
@@ -552,9 +565,9 @@ ul {
   padding: 8px 10px 8px 16px;
   border: 2px solid transparent;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .tabs__button {
-    padding: 9px 22px;
+    padding: 9px 9px 9px 22px;
   }
 }
 .tabs__button:hover {
@@ -568,9 +581,9 @@ ul {
   border-radius: 6px;
   background-color: #FFFFFF;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .tabs__button_active {
-    padding: 9px 22px;
+    padding: 9px 9px 9px 22px;
   }
 }
 
@@ -635,7 +648,7 @@ ul {
 .content-tab__link-more::before {
   content: "";
   display: block;
-  background: url("./../images/expand.svg");
+  background: url("./../assets/images/expand.svg");
   width: 24px;
   height: 24px;
   transition: all 0.4s;

@@ -1,7 +1,7 @@
 .header {
     background-color: #FFFFFF;
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1120px) {
         display: none;   
     }
 
@@ -31,6 +31,7 @@
     }
 
     &__logo {
+        flex: 1 1 auto;
         @media (min-width: 768px) {
             flex: 1 1 auto;
         }

@@ -7,15 +7,17 @@
         column-gap: 2px;
         margin-bottom: 24px;
 
-        @media (min-width: 1440px) {
-            column-gap: 10px;
-            flex-wrap: wrap;
-            row-gap: 5px;
-        }
-
         @media (min-width: 768px) {
             margin-bottom: 32px;
         }
+
+        @media (min-width: 1120px) {
+            column-gap: 10px;
+            flex-wrap: wrap;
+            row-gap: 5px;
+            margin-bottom: 11px;
+        }
+
     }
 
     &__button-item {
@@ -32,8 +34,8 @@
         padding: 8px 10px 8px 16px;
         border: 2px solid transparent;
 
-        @media (min-width: 1440px) {
-            padding: 9px 22px;
+        @media (min-width: 1120px) {
+            padding: 9px 9px 9px 22px;
         }
 
         &:hover {
@@ -48,8 +50,8 @@
             border-radius: 6px;
             background-color: #FFFFFF;
 
-            @media (min-width: 1440px) {
-                padding: 9px 22px;
+            @media (min-width: 1120px) {
+                padding: 9px 9px 9px 22px;
             }
 
         }
@@ -125,7 +127,7 @@
         &::before {
             content: '';
             display: block;
-            background: url('./../images/expand.svg');
+            background: url('./../assets/images/expand.svg');
             width: 24px;
             height: 24px;
             transition: all .4s;
