@@ -13,118 +13,91 @@
 
         <div class="wrapper">
 
-            <header class="header">
+            <nav class="navigation">
                 <div class="container">
-                    <div class="header__inner">
-                        <button class="header__burger">
-                            <img src="./src/assets/images/burger.svg" alt="burger">
-                        </button>
+                    <div class="navigation__inner">
+                        <div class="navigation__header">
 
-                        <div class="logo header__logo">
-                            <a class="link" href="#">
-                                <img class="logo__img" src="./src/assets/images/logo.svg" alt="logo">
-                            </a>
+                            <button class="navigation__btn button-icon">
+                                <img src="./src/assets/images/close.svg" alt="burger-close">
+                            </button>
+        
+                            <div class="logo navigation__logo">
+                                <a class="link" href="#">
+                                    <img class="logo__img" src="./src/assets/images/logo.svg" alt="logo">
+                                </a>
+                            </div>
+        
+                            <button class="button-icon navigationa__search">
+                                <img src="./src/assets/images/search.svg" alt="">
+                            </button>
+        
                         </div>
-
-
-                        <div class="buttons header__buttons-profile">
-                            <button class="button-icon">
-                                <img src="./src/assets/images/call.svg" alt="">
-                            </button>
-                            <button class="button-icon">
-                                <img src="./src/assets/images/chat.svg" alt="">
-                            </button>
-                            <button class="button-icon">
-                                <img src="./src/assets/images/profile.svg" alt="">
-                            </button>
+        
+                        <ul class="navigation__list fix-container">
+                            <li class="navigation__item">
+                                <a class="navigation__link navigation__link_active" href="#">Ремонт техники</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Услуги и сервисы</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Корпоративным клиентам</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Продавцам техники</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Партнерам</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Производителям</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Наши сервисные центры</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+        
+                        <div class="navigation__footer">
+                            <div class="buttons navigation__buttons">
+                                <button class="button-icon">
+                                    <img src="./src/assets/images/call.svg" alt="">
+                                </button>
+                                <button class="button-icon">
+                                    <img src="./src/assets/images/chat.svg" alt="">
+                                </button>
+                                <button class="button-icon">
+                                    <img src="./src/assets/images/profile.svg" alt="">
+                                </button>
+                            </div>
+                            <a class="navigation__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                            <a class="navigation__phone" href="tel:88008908900">8 800 890 8900</a>
                         </div>
-
-                        <div class="buttons header__buttons-services">
-
-                            <button class="button-icon">
-                                <img src="./src/assets/images/repair.svg" alt="">
-                            </button>
-                            <button class="button-icon">
-                                <img src="./src/assets/images/checkstatus.svg" alt="">
-                            </button>
-                        </div>
+                        
+                        <ul class="navigation__languages">
+                            <li class="navigation__languages-item">
+                                <a class="navigation__languages-link navigation__languages-link_active" href="#">
+                                    ru
+                                </a>
+                            </li>
+                            <li class="navigation__languages-item">
+                                <a class="navigation__languages-link" href="#">
+                                    en
+                                </a>
+                            </li>
+                            <li class="navigation__languages-item">
+                                <a class="navigation__languages-link" href="#">
+                                    ch
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-            </header>
-
-            <div class="content">
-                <div class="container">
-                    <main class="main">
-                        <div class="main__header">
-                            <h1 class="fix-container main__title">Услуги и сервисы</h1>
-                            <div class="main__buttons">
-                                <button class="button-icon">
-                                    <span>Оставить заявку</span>
-                                    <img src="./src/assets/images/repair.svg" alt="">
-                                </button>
-                                <button class="button-icon">
-                                    <span>Статус ремонта</span>
-                                    <img src="./src/assets/images/checkstatus.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="tabs">
-                            <ul class="tabs__button-list">
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button tabs__button_active">Ремонтируемые бренды</button>
-                                </li>
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button">Дополнительные услуги</button>
-                                </li>
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button">Цены на услуги</button>
-                                </li>
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button">Адреса сервисных центров</button>
-                                </li>
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button">Специальные цены</button>
-                                </li>
-                                <li class="tabs__button-item">
-                                    <button class="tabs__button">Отзывы</button>
-                                </li>
-                            </ul>
-
-                            <div class="tabs__content-list">
-                                <div class="tabs__content-item content-tab">
-                                    <div class="content-tab__main">
-                                        <div class="content-tab__desc">
-                                            <p class="content-tab__text">
-                                                Мы являемся авторизованным сервисным
-                                                 центром по ремонту техники Dell. 
-                                                Только у нас вы можете отремонтировать свой ноутбук Dell 
-                                                с официальной гарантией производителя.
-                                            </p>
-                                            <p class="content-tab__text">
-                                                Мы успешно работаем с 1992 года и заслужили репутацию 
-                                                надежного партнера, что подтверждает большое количество
-                                                 постоянных клиентов. Мы гордимся тем, что к нам 
-                                                 обращаются по рекомендациям и, в свою очередь, 
-                                                 советуют нас родным и близким.
-                                            </p>
-                                        </div>
-                                        <a class="content-tab__link-more" href="#">Читать далее</a>
-                                    </div>
-
-                                    <div class="fix-container content-tab__image-box">
-                                        <img class="content-tab__image" src="./src/assets/images/cps.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-
-                    <section> </section>
-                </div>
-
-            </div>
+                
+            </nav>
 
         </div>
     </div>
