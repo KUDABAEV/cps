@@ -429,6 +429,7 @@ ul {
   width: 320px;
   background-color: #ffffff;
   height: 100vh;
+  overflow: auto;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 .navigation__inner {
@@ -520,7 +521,7 @@ ul {
   align-items: center;
   gap: 7px;
 }
-.navigation__languages-link {
+.navigation__languages-btn {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -529,9 +530,9 @@ ul {
   text-transform: uppercase;
   transition: all 0.3s;
 }
-.navigation__languages-link:hover {
+.navigation__languages-btn:hover {
   color: #7E7E82;
 }
-.navigation__languages-link_active {
+.navigation__languages-btn_active {
   color: #7E7E82;
 }/*# sourceMappingURL=index.css.map */
