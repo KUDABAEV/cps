@@ -3,6 +3,7 @@ import { isMobile } from "./utils.js";
 
 const content = document.querySelector('.brands__content')
 const wrapper = document.querySelector('.brands-wrapper')
+const items = document.querySelectorAll('.item')
 
 
 function resizeHandler() {
@@ -13,6 +14,10 @@ function resizeHandler() {
         content.classList.add('slider')
         wrapper.classList.add('swiper-wrapper')
 
+        items.forEach(item => {
+            item.classList.add('swiper-slide')
+        })
+
         initSlider();
     } else {
         content.classList.remove('slider')
@@ -20,6 +25,9 @@ function resizeHandler() {
 
         content.classList.add('brands__desktop')
         wrapper.classList.add('brands__list')
+        items.forEach(item => {
+            item.classList.remove('swiper-slide')
+        })
     }
 }
 
