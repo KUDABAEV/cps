@@ -1,7 +1,5 @@
-const brandsSlider = document.querySelector('.slider')
-
 function initSlider() {
-    if (brandsSlider) {
+    
         new Swiper('.slider', {
             // Optional parameters
             loop: true,
@@ -15,7 +13,7 @@ function initSlider() {
             },
 
         });
-    }
+    
 
 }
 
