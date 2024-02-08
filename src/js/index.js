@@ -1,3 +1,12 @@
 import { initSlider } from "./slider.js";
+import { isMobile } from "./utils.js";
 
-initSlider();
+document.addEventListener('resize', resizeHandler);
+
+function resizeHandler() {
+    if(isMobile()) {
+        initSlider();
+    }
+}
+
+resizeHandler();
