@@ -7,13 +7,21 @@ const wrapper = document.querySelector('.brands-wrapper')
 
 function resizeHandler() {
     if (isMobile()) {
+        content.classList.remove('brands__desktop')
+        wrapper.classList.remove('brands__list')
+
         content.classList.add('slider')
         wrapper.classList.add('swiper-wrapper')
 
         initSlider();
+    } else {
+        content.classList.remove('slider')
+        wrapper.classList.remove('swiper-wrapper')
+
+        content.classList.add('brands__desktop')
+        wrapper.classList.add('brands__list')
     }
 }
 
-resizeHandler();
+resizeHandler()
 
-document.addEventListener('resize', resizeHandler);
