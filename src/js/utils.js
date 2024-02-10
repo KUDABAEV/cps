@@ -1,4 +1,4 @@
-function isMobile() {
+function checkMobile() {
     const width = window.innerWidth;
     if(width <= 768 ) {
         return true;
@@ -8,4 +8,4 @@ function isMobile() {
 }
 
 
-export { isMobile };
+export { checkMobile };
