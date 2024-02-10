@@ -479,6 +479,28 @@ ul {
 .spoler__content.hide {
   overflow: hidden;
 }
+.spoler__btn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #211b1d;
+}
+.spoler__btn::before {
+  display: inline-block;
+  content: "";
+  transition: 0.5s;
+  background: url("./../assets/images/more.svg") no-repeat;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  transform: rotate(180deg);
+}
+.spoler__btn.hide::before {
+  transform: rotate(0deg);
+}
 
 .navigation {
   background-color: white;
@@ -737,7 +759,6 @@ ul {
 
 .brands-wrapper.hide {
   height: 170px;
-  overflow: hidden;
 }
 .brands__list {
   display: grid;
@@ -759,6 +780,7 @@ ul {
   justify-content: space-between;
 }
 .brands__btn {
+  padding-top: 24px;
   display: none;
 }
 @media (min-width: 768px) {
