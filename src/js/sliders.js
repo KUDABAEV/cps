@@ -45,19 +45,11 @@ function initSliderBrands() {
             clickable: true,
         },
 
-        breakpoints: {
-            500: {
-                slidesPerView: 2
-            }
-        }
-
     });
 
 
     if (isMobile) {
         slider.init()
-    } else {
-        slider.destroy(true, true)
     }
 }
 
