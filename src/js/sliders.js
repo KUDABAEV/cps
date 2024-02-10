@@ -36,7 +36,7 @@ function initSliderBrands() {
         // Optional parameters
         loop: true,
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 16,
         init: false,
 
         // If we need pagination
@@ -44,6 +44,12 @@ function initSliderBrands() {
             el: '.swiper-pagination',
             clickable: true,
         },
+
+        breakpoints: {
+            500: {
+                slidesPerView: 2
+            }
+        }
 
     });
 

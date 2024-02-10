@@ -460,6 +460,11 @@ ul {
   width: 500px;
   overflow: hidden;
 }
+@media (min-width: 500px) {
+  .slider {
+    width: 100vw;
+  }
+}
 .slider .swiper-pagination {
   position: static !important;
   width: calc(100vw - var(--offset-container) * 2);

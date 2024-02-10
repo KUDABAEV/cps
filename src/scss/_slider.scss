@@ -2,6 +2,9 @@
     position: relative;
     width: 500px;
     overflow: hidden;
+    @media (min-width: 500px) {
+        width: 100vw; 
+    }
 
     .swiper-pagination {
         position: static !important;
