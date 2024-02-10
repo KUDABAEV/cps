@@ -14,7 +14,8 @@ h2,
 h3,
 h4,
 h5,
-h6, p,
+h6,
+p,
 figure,
 fieldset {
     margin: 0;
@@ -63,16 +64,20 @@ ul {
 }
 
 .title {
-    padding: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7E7E82;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    font-weight: 400;
+
     border-top: 1px solid #D9FFF5;
     background-color: #FFFFFF;
-    margin-bottom: 16px;
+
+    &__text {
+        padding: 16px 0;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7E7E82;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0 var(--offset-container) var(--offset-container);
+    }
 }
 
 .swiper-pagination-bullet {
@@ -82,9 +87,11 @@ ul {
     border-radius: 50%;
     opacity: 1;
 }
+
 .swiper-pagination-bullet-active {
     background-color: #B5B6BC;
 }
+
 .hp-img {
     height: 40px;
 }

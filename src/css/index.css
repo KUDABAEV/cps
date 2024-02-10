@@ -359,7 +359,8 @@ h2,
 h3,
 h4,
 h5,
-h6, p,
+h6,
+p,
 figure,
 fieldset {
   margin: 0;
@@ -404,16 +405,18 @@ ul {
 }
 
 .title {
-  padding: 16px;
+  border-top: 1px solid #D9FFF5;
+  background-color: #FFFFFF;
+}
+.title__text {
+  padding: 16px 0;
   font-size: 16px;
   line-height: 24px;
   color: #7E7E82;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-weight: 400;
-  border-top: 1px solid #D9FFF5;
-  background-color: #FFFFFF;
-  margin-bottom: 16px;
+  margin: 0 var(--offset-container) var(--offset-container);
 }
 
 .swiper-pagination-bullet {
@@ -729,22 +732,21 @@ ul {
 }
 
 .brands__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 16px;
 }
+@media (min-width: 1440px) {
+  .brands__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .brands__item {
-  width: 240px;
+  display: flex;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
   padding: 16px;
-  display: flex;
   justify-content: space-between;
-}
-@media (min-width: 768px) {
-  .brands__item {
-    width: 224px;
-  }
 }/*# sourceMappingURL=index.css.map */

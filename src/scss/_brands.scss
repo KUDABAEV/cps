@@ -1,23 +1,24 @@
 .brands {
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
         justify-content: space-between;
         gap: 16px;
+
+
+        @media (min-width: 1440px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
-    
+
     &__item {
-        width: 240px;
+        display: flex;
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
         padding: 16px;
-        display: flex;
         justify-content: space-between;
-        
-        @media (min-width: 768px) {
-            width: 224px; 
-        }
     }
 }
