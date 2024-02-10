@@ -7,6 +7,8 @@ function initSliderBrands() {
     const wrapper = document.querySelector('.brands-wrapper')
     const items = document.querySelectorAll('.brands__item-wrap')
 
+
+
     if (isMobile) {
         content.classList.remove('brands__desktop')
         wrapper.classList.remove('brands__list')
@@ -26,26 +28,31 @@ function initSliderBrands() {
 
         items.forEach(item => {
             item.classList.remove('swiper-slide')
+            item.removeAttribute('style');
         })
     }
 
+    const slider = new Swiper('.slider', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        init: false,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+    });
+
+
     if (isMobile) {
-        new Swiper('.slider', {
-            // Optional parameters
-            loop: true,
-            slidesPerView: 2,
-            spaceBetween: 20,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-        });
+        slider.init()
+    } else {
+        slider.destroy(true, true)
     }
-
-
 }
 
 

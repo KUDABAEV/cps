@@ -730,11 +730,16 @@ ul {
   gap: 16px;
 }
 .brands__item {
-  width: 224px;
+  width: 240px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
   padding: 16px;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .brands__item {
+    width: 224px;
+  }
 }/*# sourceMappingURL=index.css.map */
