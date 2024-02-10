@@ -1,8 +1,9 @@
 import { initSliderBrands } from "./sliders.js";
+import { initSpoler } from "./spoler.js";
 
 
+initSliderBrands();
+initSpoler();
 
-initSliderBrands()
-
-window.addEventListener('resize', initSliderBrands)
+window.addEventListener('resize', initSliderBrands);
 

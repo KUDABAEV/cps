@@ -476,6 +476,10 @@ ul {
   padding-top: 16px;
 }
 
+.spoler__content.hide {
+  overflow: hidden;
+}
+
 .navigation {
   background-color: white;
   flex: 0 0 320px;
@@ -731,6 +735,10 @@ ul {
   }
 }
 
+.brands-wrapper.hide {
+  height: 170px;
+  overflow: hidden;
+}
 .brands__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -749,4 +757,12 @@ ul {
   border-radius: 6px;
   padding: 16px;
   justify-content: space-between;
+}
+.brands__btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .brands__btn {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

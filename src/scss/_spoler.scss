@@ -1,0 +1,9 @@
+.spoler {
+    &__content {
+        // transition: all .5s;
+    }
+
+    &__content.hide {
+        overflow: hidden;
+    }
+}

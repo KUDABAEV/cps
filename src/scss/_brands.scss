@@ -1,5 +1,12 @@
 .brands {
 
+
+    &-wrapper.hide {
+        height: 170px;
+        overflow: hidden;
+    }
+
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -20,5 +27,11 @@
         border-radius: 6px;
         padding: 16px;
         justify-content: space-between;
+    }
+    &__btn {
+        display: none;
+        @media (min-width: 768px){
+            display: block;
+        }
     }
 }
