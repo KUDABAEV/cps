@@ -1,6 +1,14 @@
 .brands {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+    }
     
     &__item {
+        width: 224px;
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         border-radius: 6px;

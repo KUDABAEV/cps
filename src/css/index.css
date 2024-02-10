@@ -723,7 +723,14 @@ ul {
   }
 }
 
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
 .brands__item {
+  width: 224px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
