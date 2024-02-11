@@ -757,8 +757,10 @@ ul {
   }
 }
 
-.brands-wrapper.hide {
-  height: 170px;
+@media (min-width: 768px) {
+  .brands-wrapper.hide {
+    height: 170px;
+  }
 }
 .brands__list {
   display: grid;
@@ -778,6 +780,11 @@ ul {
   border-radius: 6px;
   padding: 16px;
   justify-content: space-between;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.brands__item:hover {
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
 }
 .brands__btn {
   padding-top: 24px;

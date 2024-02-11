@@ -1,8 +1,9 @@
 .brands {
 
-
-    &-wrapper.hide {
-        height: 170px;
+    @media (min-width: 768px){
+        &-wrapper.hide {
+            height: 170px;
+        }
     }
 
     &__list {
@@ -25,6 +26,11 @@
         border-radius: 6px;
         padding: 16px;
         justify-content: space-between;
+        transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0 14px 20px rgba(0, 0, 0, 0.06);
+            transform: translateY(-3px);
+        }
     }
     &__btn {
         padding-top: 24px;

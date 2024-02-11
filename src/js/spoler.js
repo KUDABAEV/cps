@@ -4,7 +4,7 @@ function initSpoler() {
     elementSpolers.forEach(spoler => {
         const btn = spoler.querySelector('.spoler__btn');
         const content = spoler.querySelector('.spoler__content');
-        let isHidden;
+        let isHidden = true;
 
         function spolerHandler() {
             if (isHidden) {
@@ -20,6 +20,8 @@ function initSpoler() {
             }
         }
 
+
+        spolerHandler();
 
         btn.addEventListener('click', spolerHandler);
     })
