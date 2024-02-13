@@ -1,3 +1,5 @@
+import { checkMobile } from "./utils.js";
+
 function initSpoler() {
     const elementSpolers = document.querySelectorAll('.spoler');
 
@@ -17,6 +19,12 @@ function initSpoler() {
                 btn.innerText = 'Скрыть'
                 content.classList.remove('hide')
                 btn.classList.remove('hide')
+            }
+
+            if (checkMobile()) {
+                content.classList.remove('hide')
+                btn.classList.remove('hide')
+
             }
         }
 
