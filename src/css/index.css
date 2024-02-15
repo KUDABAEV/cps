@@ -407,6 +407,7 @@ ul {
 .title {
   border-top: 1px solid #D9FFF5;
   background-color: #FFFFFF;
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
 }
 .title__text {
   padding: 16px 0;
