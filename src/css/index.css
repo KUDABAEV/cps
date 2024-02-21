@@ -516,7 +516,6 @@ ul {
 }
 
 .header {
-  display: none;
   background-color: #FFFFFF;
 }
 @media (min-width: 1120px) {
@@ -577,7 +576,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 .main__title {
   display: flex;
@@ -610,9 +608,6 @@ ul {
   color: #1B1C21;
 }
 
-.tabs {
-  display: none;
-}
 .tabs__button-list {
   max-width: 100%;
   overflow-x: auto;
