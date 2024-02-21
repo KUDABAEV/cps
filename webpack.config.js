@@ -65,9 +65,8 @@ module.exports = {
     ],
   },
   plugins: [
-    // Подключаем файл html, стили и скрипты встроятся автоматически
+
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
       template: './src/index.html',
       inject: true,
       minify: {
@@ -78,14 +77,14 @@ module.exports = {
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: './css/index.css',
     }),
 
     // Копируем картинки
     new CopyWebpackPlugin([
       {
-        from: './src/img',
-        to: 'img',
+        from: './src/assets/images',
+        to: 'images',
       },
     ])
   ],
