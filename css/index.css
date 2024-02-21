@@ -478,7 +478,6 @@ ul {
       display: block; } }
 
 .header {
-  display: none;
   background-color: #FFFFFF; }
   @media (min-width: 1120px) {
     .header {
@@ -522,8 +521,7 @@ ul {
 .main__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  display: none; }
+  align-items: center; }
 
 .main__title {
   display: flex;
@@ -551,51 +549,51 @@ ul {
     font-weight: 500;
     color: #1B1C21; }
 
-.tabs {
-  display: none; }
-  .tabs__button-list {
-    max-width: 100%;
-    overflow-x: auto;
-    display: flex;
-    -moz-column-gap: 2px;
-         column-gap: 2px;
-    margin-bottom: 24px; }
-    @media (min-width: 768px) {
-      .tabs__button-list {
-        margin-bottom: 32px; } }
-    @media (min-width: 1120px) {
-      .tabs__button-list {
-        -moz-column-gap: 10px;
-             column-gap: 10px;
-        flex-wrap: wrap;
-        row-gap: 5px;
-        margin-bottom: 11px; } }
-  .tabs__button-item {
-    flex: 0 0 auto; }
-  .tabs__button {
-    color: #7E7E82;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    white-space: nowrap;
+.tabs__button-list {
+  max-width: 100%;
+  overflow-x: auto;
+  display: flex;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  margin-bottom: 24px; }
+  @media (min-width: 768px) {
+    .tabs__button-list {
+      margin-bottom: 32px; } }
+  @media (min-width: 1120px) {
+    .tabs__button-list {
+      -moz-column-gap: 10px;
+           column-gap: 10px;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      margin-bottom: 11px; } }
+
+.tabs__button-item {
+  flex: 0 0 auto; }
+
+.tabs__button {
+  color: #7E7E82;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  padding: 8px 10px 8px 16px;
+  border: 2px solid transparent; }
+  @media (min-width: 1120px) {
+    .tabs__button {
+      padding: 9px 9px 9px 22px; } }
+  .tabs__button:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF; }
+  .tabs__button_active {
     padding: 8px 10px 8px 16px;
-    border: 2px solid transparent; }
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF; }
     @media (min-width: 1120px) {
-      .tabs__button {
+      .tabs__button_active {
         padding: 9px 9px 9px 22px; } }
-    .tabs__button:hover {
-      border: 2px solid #B8FFEC;
-      border-radius: 6px;
-      background-color: #FFFFFF; }
-    .tabs__button_active {
-      padding: 8px 10px 8px 16px;
-      border: 2px solid #B8FFEC;
-      border-radius: 6px;
-      background-color: #FFFFFF; }
-      @media (min-width: 1120px) {
-        .tabs__button_active {
-          padding: 9px 9px 9px 22px; } }
 
 @media (min-width: 768px) {
   .content-tab {
