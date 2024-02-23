@@ -52,4 +52,6 @@ function initSliderBrands() {
     }
 }
 
+
+
 export { initSliderBrands }

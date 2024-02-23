@@ -4,7 +4,24 @@
     background-color: #ffffff;
     min-height: 100vh;
     overflow: auto;
-    // box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    position: relative;
+    z-index: 1000;
+
+    &_floating {
+        left: -320px;
+        position: fixed;
+        transition: all .5s;
+    }
+    &_open {
+        left: 0;
+        box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    }
+
+    &__btn {
+        @media (min-width: 1120px) {
+            display: none;
+        }
+    }
 
     &__inner {
         display: flex;
@@ -114,6 +131,7 @@
             letter-spacing: -0.2px;
             text-transform: uppercase;
             transition: all .3s;
+
             &:hover {
                 color: #7E7E82;
             }
