@@ -1,12 +1,12 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "TT Lakes", sans-serif;
-    color: #1B1C21;
+  font-family: 'TT Lakes', sans-serif;
+  color: #1b1c21;
 }
 
 h1,
@@ -18,98 +18,92 @@ h6,
 p,
 figure,
 fieldset {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-
 .page {
-    background-color: #F8F8F8;
-    display: flex;
-    min-height: 100vh;
-    position: relative;
+  background-color: #f8f8f8;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
 }
 
 .page_overlay::after {
-    z-index: 100;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.96;
-    overflow: hidden;
+  z-index: 100;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.96;
+  overflow: hidden;
 }
 
 .wrapper {
-    max-width: 100%;
-    overflow: hidden;
-    flex: 1 1 auto;
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1 1 auto;
 }
-
 
 .container {
-    padding: 0 var(--offset-container);
-
+  padding: 0 var(--offset-container);
 }
 
-
 .logo {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 
 button {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .title {
+  border-top: 1px solid #d9fff5;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 
-    border-top: 1px solid #D9FFF5;
-    background-color: #FFFFFF;
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-
-    &__text {
-        padding: 16px 0;
-        font-size: 16px;
-        line-height: 24px;
-        color: #7E7E82;
-        letter-spacing: -0.2px;
-        text-transform: uppercase;
-        font-weight: 400;
-        margin: 0 var(--offset-container) var(--offset-container);
-    }
+  &__text {
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7e7e82;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 var(--offset-container) var(--offset-container);
+  }
 }
 
 .swiper-pagination-bullet {
-    background-color: #DDDDDD;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    opacity: 1;
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #B5B6BC;
+  background-color: #b5b6bc;
 }
 
 .hp-img {
-    height: 40px;
+  height: 40px;
 }
