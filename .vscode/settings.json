@@ -17,5 +17,8 @@
   "terminal.integrated.defaultProfile.windows": "bash",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
   }
 }
