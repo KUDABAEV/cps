@@ -20,11 +20,11 @@
     &-inner {
       display: flex;
       justify-content: space-between;
-      
+
       padding: 16px;
       font-size: 14px;
       line-height: 16px;
-      color: #7E7E82;
+      color: #7e7e82;
       mix-blend-mode: normal;
       opacity: 0.72;
     }
@@ -34,8 +34,6 @@
       min-width: 360px;
     }
   }
-
-
 
   @media (min-width: 500px) {
     width: initial;
@@ -165,7 +163,7 @@
       top: 10px;
       width: 7px;
       height: 10px;
-      background: url('./../assets/images/dropdown.svg');
+      background: url('../img/dropdown.svg');
     }
   }
 }
