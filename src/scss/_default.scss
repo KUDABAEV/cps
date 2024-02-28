@@ -26,6 +26,10 @@ a {
   color: inherit;
 }
 
+h5 {
+  font-weight: inherit;
+}
+
 .page {
   background-color: #f8f8f8;
   display: flex;
@@ -49,7 +53,7 @@ a {
   opacity: 0.96;
   overflow: hidden;
   @media (min-width: 1120px) {
-    z-index: 1001 ;
+    z-index: 1001;
   }
 }
 

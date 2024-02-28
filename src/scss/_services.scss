@@ -13,8 +13,16 @@
 
   &__top {
     display: none;
+    font-weight: 500;
     @media (min-width: 768px) {
       display: block;
+    }
+    &-subtitle {
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      mix-blend-mode: normal;
+      opacity: 0.72;
     }
 
     &-inner {
@@ -28,10 +36,16 @@
       mix-blend-mode: normal;
       opacity: 0.72;
     }
+
     &-desc {
       display: flex;
       gap: 92px;
       min-width: 360px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      mix-blend-mode: normal;
+      opacity: 0.72;
     }
   }
 
