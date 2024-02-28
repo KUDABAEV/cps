@@ -154,6 +154,9 @@
 
     &:hover {
       background-color: #ff3e39;
+      &::after {
+        right: 12px;
+      }
     }
 
     &::after {
@@ -164,6 +167,7 @@
       width: 7px;
       height: 10px;
       background: url('../img/dropdown.svg');
+      transition: all 0.5s;
     }
   }
 }

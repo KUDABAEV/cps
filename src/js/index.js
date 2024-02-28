@@ -5,6 +5,7 @@ import { initSpoler } from './spoler.js'
 import { debounce } from './utils.js'
 import { initNavigation } from './navigation.js'
 import { initSliderServices } from './servicesSlider.js'
+import { initModals } from './modal.js'
 
 function init() {
   initSliderBrands()
@@ -12,6 +13,7 @@ function init() {
   initSliderServices()
   initSpoler()
   initNavigation()
+  initModals()
 }
 
 init()

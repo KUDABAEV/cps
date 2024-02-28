@@ -20,5 +20,8 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

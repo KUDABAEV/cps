@@ -31,6 +31,7 @@ a {
   display: flex;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .page_overlay::after {
@@ -47,6 +48,9 @@ a {
   mix-blend-mode: normal;
   opacity: 0.96;
   overflow: hidden;
+  @media (min-width: 1120px) {
+    z-index: 1001 ;
+  }
 }
 
 .wrapper {
@@ -106,4 +110,21 @@ ul {
 
 .hp-img {
   height: 40px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  bottom: 0;
+  z-index: 10000;
+
+  height: 100vh;
+  background-color: white;
+
+  transition: 1s;
+}
+
+.js-open.modal {
+  right: 0;
 }

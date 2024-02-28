@@ -4,34 +4,41 @@ import { debounce } from './utils'
 const navigation = document.querySelector('.navigation')
 const burgerAll = document.querySelectorAll('.burger')
 
-let isNavigationActive = false
+let isOpen = false
 
 export function openNavigation() {
-  isNavigationActive = true
+  isOpen = true
   navigation.classList.add('navigation_open')
+  updateBtn(closeNavigation)
+  updateImg('./img/burger.svg')
   addOverlay()
 }
 
 export function closeNavigation() {
-  isNavigationActive = false
+  isOpen = false
   navigation.classList.remove('navigation_open')
+  updateImg('./img/burger-open.svg')
+  updateBtn(openNavigation)
   removeOverlay()
 }
 
-export function toggleNavigation() {
-  const images = document.querySelectorAll('.burger img')
+function updateBtn() {
+  burgerAll.forEach((btn) => {
+    if (isOpen) {
+      btn.removeEventListener('click', openNavigation)
+      btn.addEventListener('click', closeNavigation)
+    } else {
+      btn.removeEventListener('click', closeNavigation)
+      btn.addEventListener('click', openNavigation)
+    }
+  })
+}
 
-  if (isNavigationActive) {
-    closeNavigation()
-    images.forEach((img) => {
-      img.src = './img/burger-open.svg'
-    })
-  } else {
-    openNavigation()
-    images.forEach((img) => {
-      img.src = './img/burger.svg'
-    })
-  }
+function updateImg(url) {
+  const images = document.querySelectorAll('.burger img')
+  images.forEach((img) => {
+    img.src = url
+  })
 }
 
 function updateFloating() {
@@ -47,7 +54,7 @@ function updateFloating() {
 
 export function initNavigation() {
   burgerAll.forEach((item) => {
-    item.addEventListener('click', toggleNavigation)
+    item.addEventListener('click', openNavigation)
   })
 
   updateFloating()

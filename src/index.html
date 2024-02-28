@@ -66,10 +66,10 @@
 
             <div class="navigation__footer">
               <div class="buttons navigation__buttons">
-                <button class="button-icon">
+                <button class="button-icon modal-btn-open" data-to="feedback">
                   <img src="./src/img/call.svg" alt="" />
                 </button>
-                <button class="button-icon">
+                <button class="button-icon modal-btn-open" data-to="call">
                   <img src="./src/img/chat.svg" alt="" />
                 </button>
                 <button class="button-icon">
@@ -119,23 +119,23 @@
               </div>
 
               <div class="buttons header__buttons-profile">
-                <button class="button-icon">
-                  <img src="./img/call.svg" alt="" />
+                <button class="button-icon modal-btn-open" data-to="feedback">
+                  <img src="./img/call.svg" alt="call" />
+                </button>
+                <button class="button-icon modal-btn-open" data-to="call">
+                  <img src="./img/chat.svg" alt="chat" />
                 </button>
                 <button class="button-icon">
-                  <img src="./img/chat.svg" alt="" />
-                </button>
-                <button class="button-icon">
-                  <img src="./img/profile.svg" alt="" />
+                  <img src="./img/profile.svg" alt="profile" />
                 </button>
               </div>
 
               <div class="buttons header__buttons-services">
                 <button class="button-icon">
-                  <img src="./img/repair.svg" alt="" />
+                  <img src="./img/repair.svg" alt="repair" />
                 </button>
                 <button class="button-icon">
-                  <img src="./img/checkstatus.svg" alt="" />
+                  <img src="./img/checkstatus.svg" alt="checkstatus" />
                 </button>
               </div>
             </div>
@@ -926,10 +926,15 @@
             </div>
           </div>
         </footer>
+      </div>
 
-        <aside class="feedback">
+      <div class="modal-box">
+        <aside class="modal feedback">
           <div class="container">
             <div class="feedback__inner">
+              <button class="modal-btn-close feedback__modal-btn-close">
+                <img src="./img/burger.svg" alt="close" />
+              </button>
               <h1 class="fix-container main__title">Обратная связь</h1>
 
               <form class="feedback__form" action="">
@@ -960,6 +965,47 @@
                     placeholder="Сообщение"
                   ></textarea>
                 </label>
+
+                <label class="feedback__agree">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#">обработку персональных данных</a> и соглашаетесь с
+                  нашей <a href="#">политикой конфиденциальности</a>
+                </label>
+
+                <button class="services__button feedback__button"
+                  >Отправить</button
+                >
+              </form>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="modal call">
+          <div class="container">
+            <div class="call__inner">
+              <button class="modal-btn-close call__modal-btn-close">
+                <img src="./img/burger.svg" alt="close" />
+              </button>
+              <h1 class="fix-container main__title">Заказать звонок</h1>
+
+              <form class="call__form" action="">
+                <label>
+                  <input
+                    class="call__phone"
+                    type="text"
+                    placeholder="Телефон"
+                  />
+                </label>
+
+                <label class="feedback__agree">
+                  Нажимая “отправить”, вы даете согласие на
+                  <a href="#">обработку персональных данных</a> и соглашаетесь с
+                  нашей <a href="#">политикой конфиденциальности</a>
+                </label>
+
+                <button class="services__button feedback__button"
+                  >Отправить</button
+                >
               </form>
             </div>
           </div>
